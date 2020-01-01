@@ -8,6 +8,7 @@ import fontAwesome from '../../assets/fonts/fa-solid-900.ttf';
 const CustomIcon = createIconSet({
   pencil: '\uf303',
   plus: '\uf067',
+  check: '\uf00c',
 }, 'FontAwesome');
 
 class CircleButton extends React.Component {
@@ -15,6 +16,7 @@ class CircleButton extends React.Component {
     fontLoaded: false,
   };
 
+  // eslint-disable-next-line camelcase
   async UNSAFE_componentWillMount() {
     await Font.loadAsync({
       FontAwesome: fontAwesome,
