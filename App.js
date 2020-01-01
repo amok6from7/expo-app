@@ -1,10 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+
+import Appbar from './src/component/Appbar';
+import MemoList from './src/component/MemoList';
+import CircleButton from './src/elements/CircleButton';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Appbar />
+      <MemoList />
+      <CircleButton>+</CircleButton>
     </View>
   );
 }
@@ -12,8 +18,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#FFFDF6',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: 78,
   },
 });
