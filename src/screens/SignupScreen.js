@@ -52,6 +52,7 @@ class SignupScreen extends React.Component {
         <TouchableHighlight
           style={styles.button}
           onPress={() => { this.handleSubmit(); }}
+          underlayColor="#70F66"
         >
           <Text style={styles.buttonTitle}>送信する</Text>
         </TouchableHighlight>

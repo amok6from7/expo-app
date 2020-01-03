@@ -7,8 +7,8 @@ import { NavigationActions, StackActions } from 'react-navigation';
 
 class LoginScreen extends React.Component {
   state = {
-    email: 'test@test.jp',
-    password: 'testtest',
+    email: '',
+    password: '',
   }
 
   // eslint-disable-next-line
@@ -57,6 +57,7 @@ class LoginScreen extends React.Component {
         <TouchableHighlight
           style={styles.button}
           onPress={() => { this.handleSubmit(); }}
+          underlayColor="#70F66"
         >
           <Text style={styles.buttonTitle}>ログインする</Text>
         </TouchableHighlight>
